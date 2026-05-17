@@ -1,16 +1,58 @@
-# React + Vite
+# 🚀 M. Hasbianur Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern developer portfolio website built with React, Vite, and Framer Motion.
 
-Currently, two official plugins are available:
+## ✨ Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Modern futuristic UI
+- Responsive mobile-first design
+- Animated particles background
+- Smooth page transitions
+- Interactive project showcase
+- Contact form with EmailJS
+- Tech stack animation
 
-## React Compiler
+## 🛠 Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React.js
+- Vite
+- Framer Motion
+- TSParticles
+- EmailJS
+- React Icons
 
-## Expanding the ESLint configuration
+## 📂 Sections
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Hero
+- About Me
+- Featured Projects
+- Contact
+
+## 🌐 Live Demo
+
+Coming Soon...
+
+## 📸 Preview
+
+![Portfolio Preview](./public/preview.png)
+
+## ⚙ Installation
+
+```bash
+npm install
+npm run dev
+```
+
+## 📦 Build
+
+```bash
+npm run build
+```
+
+## 👨‍💻 Author
+
+M. Hasbianur
+
+- GitHub: https://github.com/MHASBIANUR
+- LinkedIn: https://www.linkedin.com/in/m-hasbianur/
+- Instagram: https://www.instagram.com/hasbii.nur/
