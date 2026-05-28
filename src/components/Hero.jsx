@@ -40,7 +40,7 @@ export default function Hero() {
         <p className="hero-role">
           <TypeAnimation
             sequence={[
-              "Full Stack Web Developer || Backend",
+              "Full Stack Web Developer",
               1000,
               "JavaScript . PHP || React.js . Next.js",
               1000,

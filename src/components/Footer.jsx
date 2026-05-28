@@ -25,7 +25,7 @@ export default function Footer() {
           <h3>M. Hasbianur</h3>
 
           <p>
-            Full Stack Developer • Backend Developer
+            Full Stack Developer • Backend / Frontend
           </p>
         </div>
 
