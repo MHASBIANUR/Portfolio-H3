@@ -1,4 +1,5 @@
 import { useRef } from "react";
+
 import emailjs from "@emailjs/browser";
 
 import { motion } from "framer-motion";
@@ -39,7 +40,10 @@ export default function Contact() {
   };
 
   return (
-    <section className="contact">
+    <section
+      className="contact"
+      id="contact"
+    >
 
       {/* LEFT */}
       <motion.div
@@ -47,6 +51,7 @@ export default function Contact() {
         initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
       >
 
         <h2>Contact Me</h2>
@@ -61,6 +66,7 @@ export default function Contact() {
 
           <div className="contact-item">
             <MdEmail />
+
             <span>
               hasbianur16@gmail.com
             </span>
@@ -68,6 +74,7 @@ export default function Contact() {
 
           <div className="contact-item">
             <FaWhatsapp />
+
             <span>
               +62 823-5323-6845
             </span>
@@ -120,6 +127,7 @@ export default function Contact() {
         initial={{ opacity: 0, x: 40 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.7 }}
+        viewport={{ once: true }}
       >
 
         <input

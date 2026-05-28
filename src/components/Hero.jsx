@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import { TypeAnimation } from "react-type-animation";
+
 import {
   FaGithub,
   FaLinkedin,
@@ -7,9 +8,18 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 
-export default function Hero({ setPage }) {
+import mhLogo from "../assets/mh.png";
+
+export default function Hero() {
   return (
-    <section className="hero">
+    <section className="hero" id="home">
+
+      {/* LOGO */}
+      <img
+        src={mhLogo}
+        alt="mh Logo"
+        className="hero-logo"
+      />
 
       {/* LEFT */}
       <motion.div
@@ -90,21 +100,39 @@ export default function Hero({ setPage }) {
 
           <button
             className="outline-btn"
-            onClick={() => setPage("about")}
+            onClick={() =>
+              document
+                .getElementById("about")
+                .scrollIntoView({
+                  behavior: "smooth",
+                })
+            }
           >
             About Me
           </button>
 
           <button
             className="outline-btn"
-            onClick={() => setPage("projects")}
+            onClick={() =>
+              document
+                .getElementById("projects")
+                .scrollIntoView({
+                  behavior: "smooth",
+                })
+            }
           >
             Projects
           </button>
 
           <button
             className="outline-btn"
-            onClick={() => setPage("contact")}
+            onClick={() =>
+              document
+                .getElementById("contact")
+                .scrollIntoView({
+                  behavior: "smooth",
+                })
+            }
           >
             Contact
           </button>

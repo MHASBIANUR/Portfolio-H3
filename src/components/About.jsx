@@ -46,7 +46,7 @@ export default function About() {
   );
 
   return (
-    <section className="about">
+    <section className="about" id="about">
 
       {/* LEFT */}
       <motion.div
@@ -54,6 +54,7 @@ export default function About() {
         initial={{ opacity: 0, x: -40 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
       >
         <h2>About Me</h2>
 
@@ -89,6 +90,7 @@ export default function About() {
         initial={{ opacity: 0, x: 40 }}
         whileInView={{ opacity: 1, x: 0 }}
         transition={{ duration: 0.8 }}
+        viewport={{ once: true }}
       >
         <h3>Tech Stack</h3>
 

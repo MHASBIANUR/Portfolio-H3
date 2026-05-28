@@ -1,6 +1,10 @@
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
+
+import {
+  FaGithub,
+  FaExternalLinkAlt,
+} from "react-icons/fa";
 
 /* IMAGES */
 import taskora1 from "../assets/project1.jpg";
@@ -10,6 +14,7 @@ import medimineImg1 from "../assets/project2.jpg";
 import medimineImg2 from "../assets/project2-1.jpg";
 
 import resumatchImg from "../assets/project3.jpg";
+
 import portfolioImg from "../assets/project4.jpg";
 
 export default function Projects() {
@@ -21,7 +26,12 @@ export default function Projects() {
       description:
         "Task management application designed to organize daily workflows with clean and intuitive task tracking.",
 
-      tech: ["Next.js", "TypeScript", "Tailwind CSS", "Supabase"],
+      tech: [
+        "Next.js",
+        "TypeScript",
+        "Tailwind CSS",
+        "Supabase",
+      ],
 
       github: "https://github.com/MHASBIANUR/taskora",
 
@@ -78,7 +88,12 @@ export default function Projects() {
       description:
         "Modern developer portfolio with futuristic UI, smooth animations, interactive particles, and responsive layouts.",
 
-      tech: ["React", "Vite", "Framer Motion", "TSParticles"],
+      tech: [
+        "React",
+        "Vite",
+        "Framer Motion",
+        "TSParticles",
+      ],
 
       github: "",
 
@@ -121,13 +136,17 @@ export default function Projects() {
   };
 
   return (
-    <section className="projects">
+    <section
+      className="projects"
+      id="projects"
+    >
 
       <motion.h2
         className="projects-title"
         initial={{ opacity: 0, y: -30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
+        viewport={{ once: true }}
       >
         Featured Projects
       </motion.h2>
@@ -145,6 +164,7 @@ export default function Projects() {
               duration: 0.5,
               delay: index * 0.15,
             }}
+            viewport={{ once: true }}
           >
 
             {/* IMAGE */}
@@ -188,9 +208,13 @@ export default function Projects() {
               <p>{project.description}</p>
 
               <div className="project-tech">
+
                 {project.tech.map((item, i) => (
-                  <span key={i}>{item}</span>
+                  <span key={i}>
+                    {item}
+                  </span>
                 ))}
+
               </div>
 
               <div className="project-links">
@@ -223,6 +247,7 @@ export default function Projects() {
 
           </motion.div>
         ))}
+
       </div>
     </section>
   );
